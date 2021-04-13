@@ -11,11 +11,6 @@ public class Manager extends Employee {
 	        this.quantity = clientAmount;
 	    }
 
-
-	    public BigDecimal getBonus() {
-	        return bonus;
-	    }
-
 	    @Override
 	    public void setBonus(BigDecimal bonus) {
 	    	BigDecimal bd500 = new BigDecimal("500");
