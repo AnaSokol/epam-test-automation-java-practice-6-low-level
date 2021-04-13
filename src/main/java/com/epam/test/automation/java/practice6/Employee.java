@@ -24,6 +24,10 @@ public class Employee {
         this.salary = salary;
     }
 	
+	public BigDecimal getBonus() {
+        return bonus;
+    }
+    
     public void setBonus(BigDecimal bonus) {
         this.bonus = bonus;
     }
