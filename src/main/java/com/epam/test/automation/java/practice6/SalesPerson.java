@@ -19,13 +19,13 @@ public class SalesPerson extends Employee {
     	BigDecimal bd2 = new BigDecimal("2");
     	BigDecimal bd3 = new BigDecimal("3");
     	if (percent>100 && percent<=200) {
-    		super.setBonus(bd2.multiply(bonus));
+    		this.setBonus(bd2.multiply(bonus));
     	}
     	else if (percent>200) {
-    		super.setBonus(bd3.multiply(bonus));
+    		this.setBonus(bd3.multiply(bonus));
     	}
     	else 
-    		super.setBonus(bonus);
+    		this.setBonus(bonus);
     }
    
 }
