@@ -13,8 +13,8 @@ public class Manager extends Employee {
 
 	    @Override
 	    public void setBonus(BigDecimal bonus) {
-	        if (bonus.equals(null))
-    		throw new NullPointerException();
+	        if (bonus.compareTo(BigDecimal.ZERO) < 0 || bonus.equals(null))
+    		    throw new IllegalArgumentException();
 
 	    	BigDecimal bd500 = new BigDecimal("500");
 	    	BigDecimal bd1000 = new BigDecimal("1000");   	
