@@ -32,7 +32,9 @@ public abstract class Employee {
     
     public abstract void setBonus(BigDecimal bonus);
     
-    public BigDecimal toPay () {
+     public BigDecimal toPay () {
+    	if (bonus == null || bonus.compareTo(BigDecimal.ZERO) < 0)
+    		throw new IllegalArgumentException("Bonus is not set or <0");
     	return this.salary.add(this.bonus);	
     }
 }
