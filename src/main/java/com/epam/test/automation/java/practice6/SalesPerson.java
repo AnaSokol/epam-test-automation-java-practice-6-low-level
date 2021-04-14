@@ -18,7 +18,7 @@ public class SalesPerson extends Employee {
 	    		throw new IllegalArgumentException();
     	BigDecimal bd2 = new BigDecimal("2");
     	BigDecimal bd3 = new BigDecimal("3");
-    	if (percent>100) {
+    	if (percent>100 && percent<=200) {
     		super.setBonus(bd2.multiply(bonus));
     	}
     	else if (percent>200) {
