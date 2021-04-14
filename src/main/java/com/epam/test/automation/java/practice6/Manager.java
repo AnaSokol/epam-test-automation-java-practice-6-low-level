@@ -17,14 +17,14 @@ public class Manager extends Employee {
     		    throw new IllegalArgumentException();
 
 	    	BigDecimal bd500 = new BigDecimal("500");
-	    	BigDecimal bd1000 = new BigDecimal("1000");   	
+	    	BigDecimal bd1500 = new BigDecimal("1500");   	
 	
-	    	if (quantity>100) {
-	    		BigDecimal bonusOver100 = bd500.add(bonus);
+	    	if (quantity>100) {	 	
+	    		BigDecimal bonusOver100 = bonus.add(bd500);
 	    		super.setBonus(bonusOver100);
 	    	}
 	    	else if (quantity>150) {
-	    		BigDecimal bonusOver150 = bd1000.add(bonus);
+	    		BigDecimal bonusOver150 = bonus.add(bd1500);
 	    		super.setBonus(bonusOver150);
 	    	}
 	    	else 
