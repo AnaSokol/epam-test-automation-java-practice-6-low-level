@@ -21,14 +21,14 @@ public class Manager extends Employee {
 	
 	    	if (quantity>100 && quantity<=150) {	 	
 	    		BigDecimal bonusOver100 = bonus.add(bd500);
-	    		super.setBonus(bonusOver100);
+	    		this.setBonus(bonusOver100);
 	    	}
 	    	else if (quantity>150) {
 	    		BigDecimal bonusOver150 = bonus.add(bd1000);
-	    		super.setBonus(bonusOver150);
+	    		this.setBonus(bonusOver150);
 	    	}
 	    	else 
-	    		super.setBonus (bonus);
+	    		this.setBonus (bonus);
 	    }
 
 }
