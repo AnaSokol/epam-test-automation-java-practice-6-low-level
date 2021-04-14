@@ -2,7 +2,7 @@ package com.epam.test.automation.java.practice6;
 
 import java.math.BigDecimal;
 
-public class Employee {
+public abstract class Employee {
     private String name;
     private BigDecimal salary;
     protected BigDecimal bonus;
@@ -28,7 +28,7 @@ public class Employee {
         return bonus;
     }
     
-    public void setBonus(BigDecimal bonus) {};
+    public abstract void setBonus(BigDecimal bonus);
     
     public BigDecimal toPay () {
     	return this.salary.add(this.bonus);	
