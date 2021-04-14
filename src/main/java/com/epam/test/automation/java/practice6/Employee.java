@@ -16,8 +16,6 @@ public abstract class Employee {
     }
 
     public void setSalary(BigDecimal salary) {
-    	if (salary.compareTo(BigDecimal.ZERO)<0 || salary == null)
-    		throw new IllegalArgumentException("Salary cannot be a negative number");
         this.salary = salary;
     }
 
