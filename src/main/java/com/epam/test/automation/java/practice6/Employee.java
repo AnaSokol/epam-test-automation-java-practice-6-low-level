@@ -28,11 +28,7 @@ public class Employee {
         return bonus;
     }
     
-    public void setBonus(BigDecimal bonus) {
-    	if (bonus.compareTo(BigDecimal.ZERO) < 0 || bonus.equals(null))
-    		throw new IllegalArgumentException();
-        this.bonus = bonus;
-    }
+    public abstract void setBonus(BigDecimal bonus);
     
     public BigDecimal toPay () {
     	return this.salary.add(this.bonus);	
