@@ -14,8 +14,9 @@ public class SalesPerson extends Employee {
 
     @Override
     public void setBonus(BigDecimal bonus) {
-        if (bonus == null || bonus.compareTo(BigDecimal.ZERO) < 0)
+        if (bonus == null || bonus.compareTo(BigDecimal.ZERO) < 0) {
 	    	throw new IllegalArgumentException("bonus is null or < 0");
+        }
     	BigDecimal bd2 = new BigDecimal("2");
     	BigDecimal bd3 = new BigDecimal("3");
     	if (percent>100 && percent<=200) {
